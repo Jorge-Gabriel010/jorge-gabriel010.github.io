@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jorge Gabriel | Portfólio de Dados</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+            border-bottom: 1px solid #263247;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            padding: 75px 10%;
+        }
+
+        .inicio {
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .inicio h1 {
+            font-size: 46px;
+            margin-bottom: 15px;
+        }
+
+        .destaque {
+            color: #60a5fa;
+        }
+
+        .inicio p {
+            max-width: 650px;
+            color: #aab5c5;
+            font-size: 18px;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            width: fit-content;
+        }
+
+        h2.titulo {
+            color: #60a5fa;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .habilidades, .projetos {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #172235;
+            padding: 23px;
+            border-radius: 10px;
+            border: 1px solid #263247;
+        }
+
+        .card h3 {
+            color: #93c5fd;
+            margin-bottom: 10px;
+        }
+
+        .card p, .sobre p {
+            color: #aab5c5;
+        }
+
+        .contato a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 12px;
+            }
+
+            .inicio h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>JG | Dados</h2>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <h1>Olá, eu sou <span class="destaque">Jorge Gabriel</span></h1>
+
+        <p>
+            Estudante de Ciência de Dados, formado em Administração,
+            interessado em tecnologia, análise de dados e Business
+            Intelligence. Busco transformar dados em informações
+            que apoiem decisões estratégicas.
+        </p>
+
+        <a href="#projetos" class="botao">
+            Conheça meus projetos
+        </a>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2 class="titulo">Sobre mim</h2>
+
+        <p>
+            Sou formado em Administração e estudante de Ciência
+            de Dados. Tenho experiência profissional na área
+            cartorária, com atendimento ao público, análise
+            documental, organização de informações e utilização
+            de sistemas digitais.
+
+            <br><br>
+
+            Atualmente, estou desenvolvendo conhecimentos em
+            SQL, Python, Power BI e Excel, buscando aplicar
+            tecnologia e análise de dados na resolução de
+            problemas reais.
+        </p>
+    </section>
+
+    <section id="habilidades">
+        <h2 class="titulo">Habilidades técnicas</h2>
+
+        <div class="habilidades">
+
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Consultas e manipulação de bancos de dados.</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Lógica de programação e análise de dados.</p>
+            </div>
+
+            <div class="card">
+                <h3>Power BI</h3>
+                <p>Visualização de dados e criação de dashboards.</p>
+            </div>
+
+            <div class="card">
+                <h3>Excel</h3>
+                <p>Organização, análise e tratamento de informações.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2 class="titulo">Meus projetos</h2>
+
+        <div class="projetos">
+
+            <div class="card">
+                <h3>Projeto em desenvolvimento</h3>
+                <p>
+                    Em breve, projetos de análise de dados,
+                    dashboards e automações.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Projetos SQL</h3>
+                <p>
+                    Em breve, consultas e análises utilizando
+                    bancos de dados.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Projetos Python</h3>
+                <p>
+                    Em breve, soluções de programação
+                    e automação de tarefas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h2 class="titulo">Formação e experiência</h2>
+
+        <div class="card">
+            <h3>Ciência de Dados</h3>
+            <p>Graduação em andamento — Cruzeiro do Sul.</p>
+
+            <br>
+
+            <h3>Administração</h3>
+            <p>Graduação concluída.</p>
+
+            <br>
+
+            <h3>Experiência profissional</h3>
+            <p>Atuação na área cartorária desde 2021.</p>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2 class="titulo">Vamos nos conectar?</h2>
+
+        <p>
+            Estou aberto a oportunidades de estágio
+            na área de Dados e Tecnologia.
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/Jorge-Gabriel010"
+               target="_blank">
+               Meu perfil
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/jorge-gabriel-884a38413/"
+               target="_blank">
+               Meu LinkedIn
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Jorge Gabriel | Portfólio de Dados
+    </footer>
+
+</body>
+</html>
